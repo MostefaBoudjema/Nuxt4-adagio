@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     app: {
         head: {
-            title: 'MEDICIO',
+            title: 'HOTEL',
             link: [
                 { rel: 'icon', type: 'image/png', href: '/img/favicon.png' },
             ],
