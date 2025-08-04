@@ -13,7 +13,7 @@
         <div class="branding d-flex align-items-center">
             <div class="container position-relative d-flex align-items-center justify-content-end">
                 <NuxtLink to="/" class="logo d-flex align-items-center me-auto">
-                    <img src="/img/logo.png" alt="">
+                    <img src="/img/Adagio_logo.svg" alt="">
                 </NuxtLink>
                 <nav id="navmenu" class="navmenu">
                     <ul>
