@@ -12,7 +12,7 @@
       </section>
 
       <!-- Features Section -->
-      <section class="features py-5" data-aos="fade-up">
+      <section id="features" class="features py-5" data-aos="fade-up">
         <div class="container">
           <div class="row text-center">
             <div class="col-md-4 mb-4">
@@ -35,7 +35,7 @@
       </section>
 
       <!-- Rooms Section -->
-      <section class="rooms bg-light py-5" data-aos="fade-up">
+      <section id="rooms" class="rooms bg-light py-5" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-5">
             <h2>Our Rooms</h2>
@@ -44,7 +44,7 @@
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="card h-100 shadow-sm">
-                <img src="/img/room1.jpg" class="card-img-top" alt="Room 1">
+                <img src="/img/room1.webp" class="card-img-top" alt="Room 1">
                 <div class="card-body">
                   <h5 class="card-title">Deluxe Room</h5>
                   <p class="card-text">Elegant room with city view, free Wi-Fi, and more.</p>
@@ -54,7 +54,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card h-100 shadow-sm">
-                <img src="/img/room2.jpg" class="card-img-top" alt="Room 2">
+                <img src="/img/room2.webp" class="card-img-top" alt="Room 2">
                 <div class="card-body">
                   <h5 class="card-title">Executive Suite</h5>
                   <p class="card-text">Spacious suite with luxury amenities and lounge access.</p>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="card h-100 shadow-sm">
-                <img src="/img/room3.jpg" class="card-img-top" alt="Room 3">
+                <img src="/img/room3.webp" class="card-img-top" alt="Room 3">
                 <div class="card-body">
                   <h5 class="card-title">Family Room</h5>
                   <p class="card-text">Comfortable room ideal for families with kids.</p>
@@ -107,7 +107,7 @@
         </div>
       </section>
       <!-- Testimonials Section -->
-      <section class="testimonials py-5" data-aos="fade-up">
+      <section id="testimonials" class="testimonials py-5" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-5">
             <h2>What Our Guests Say</h2>
@@ -139,7 +139,7 @@
       </section>
 
       <!-- Gallery Section -->
-      <section class="gallery py-5 bg-light" data-aos="fade-up">
+      <section id="gallery" class="gallery py-5 bg-light" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-5">
             <h2>Gallery</h2>
@@ -147,20 +147,38 @@
           </div>
           <div class="row g-3">
             <div class="col-md-4">
-              <img src="/img/gallery1.jpg" alt="Gallery 1" class="img-fluid rounded shadow-sm w-100">
+              <img src="/img/gallery/gallery1.jpg" alt="Gallery 1" class="img-fluid rounded shadow-sm w-100">
             </div>
             <div class="col-md-4">
-              <img src="/img/gallery2.jpg" alt="Gallery 2" class="img-fluid rounded shadow-sm w-100">
+              <img src="/img/gallery/gallery2.jpg" alt="Gallery 2" class="img-fluid rounded shadow-sm w-100">
             </div>
             <div class="col-md-4">
-              <img src="/img/gallery3.jpg" alt="Gallery 3" class="img-fluid rounded shadow-sm w-100">
+              <img src="/img/gallery/gallery3.jpg" alt="Gallery 3" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery9.jpg" alt="Gallery 1" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery4.jpg" alt="Gallery 2" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery5.jpg" alt="Gallery 3" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery6.jpg" alt="Gallery 1" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery7.jpg" alt="Gallery 2" class="img-fluid rounded shadow-sm w-100">
+            </div>
+            <div class="col-md-4">
+              <img src="/img/gallery/gallery8.jpg" alt="Gallery 3" class="img-fluid rounded shadow-sm w-100">
             </div>
           </div>
         </div>
       </section>
 
       <!-- Location Section -->
-      <section class="location py-5" data-aos="fade-up">
+      <section id="location" class="location py-5" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-4">
             <h2>Our Location</h2>
@@ -215,7 +233,7 @@
       </section>
 
       <!-- Pricing Plans Section -->
-      <section class="pricing py-5" data-aos="fade-up">
+      <section id="pricing" class="pricing py-5" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-5">
             <h2>Pricing Plans</h2>
@@ -275,7 +293,7 @@
       </section>
 
       <!-- Blog / News Section -->
-      <section class="blog py-5 bg-light" data-aos="fade-up">
+      <section id="blog" class="blog py-5 bg-light" data-aos="fade-up">
         <div class="container">
           <div class="section-title text-center mb-5">
             <h2>Latest News</h2>
@@ -317,7 +335,7 @@
       </section>
 
       <!-- Newsletter Section -->
-      <section class="newsletter py-5" data-aos="fade-up">
+      <section id="contact" class="newsletter py-5" data-aos="fade-up">
         <div class="container text-center">
           <div class="section-title mb-4">
             <h2>Stay Updated</h2>
