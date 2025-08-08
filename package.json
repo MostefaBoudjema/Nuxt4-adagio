@@ -1,23 +1,28 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxtjs/i18n": "^10.0.3",
-    "nuxt": "^4.0.1",
-    "swiper": "^11.2.10",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
-  },
-  "packageManager": "pnpm@10.12.4+sha1.88a0ccfe72d6345dede50dc9d6158400be2420eb",
-  "devDependencies": {
-    "@types/i18n": "^0.13.12"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "dev2": "nuxt dev --port 3002",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@nuxtjs/i18n": "^10.0.3",
+        "@srexi/purecounterjs": "^1.5.0",
+        "aos": "^2.3.4",
+        "glightbox": "^3.3.1",
+        "nuxt": "^4.0.1",
+        "swiper": "^11.2.10",
+        "vue": "^3.5.18",
+        "vue-router": "^4.5.1"
+    },
+    "packageManager": "pnpm@10.12.4+sha1.88a0ccfe72d6345dede50dc9d6158400be2420eb",
+    "devDependencies": {
+        "@types/aos": "^3.0.7",
+        "@types/i18n": "^0.13.12"
+    }
 }

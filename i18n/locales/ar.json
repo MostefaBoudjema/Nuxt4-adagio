@@ -1,0 +1,57 @@
+{
+    "about": {
+        "title": "من نحن",
+        "text": "نحن نقدم خدمات طبية متميزة باستخدام أحدث التقنيات لضمان راحة وسلامة مرضانا."
+    },
+    "services": {
+        "title": "خدماتنا",
+        "items": [
+            {
+                "title": "الفحص الطبي",
+                "description": "نقدم فحوصات طبية شاملة لضمان صحتك العامة."
+            },
+            {
+                "title": "رعاية القلب",
+                "description": "نهتم بصحة قلبك من خلال أحدث وسائل التشخيص والعلاج."
+            },
+            {
+                "title": "الاستشارات الطبية",
+                "description": "فريقنا من الأطباء المختصين جاهز لتقديم الاستشارات في جميع الأوقات."
+            }
+        ]
+    },
+    "contact": {
+        "title": "اتصل بنا",
+        "form": {
+            "name": "الاسم الكامل",
+            "email": "البريد الإلكتروني",
+            "message": "رسالتك",
+            "submit": "إرسال"
+        }
+    },
+    "hero": {
+        "imageAlt": "About image",
+        "title": "WELCOME TO MEDILAB",
+        "subtitle": "We are team of talented designers making websites with Bootstrap",
+        "whyTitle": "Why Choose Medilab?",
+        "whyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.",
+        "learnMore": "Learn More",
+        "iconBoxes": [
+            {
+                "icon": "bi bi-clipboard-data",
+                "title": "Corporis voluptates officia eiusmod",
+                "text": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip"
+            },
+            {
+                "icon": "bi bi-gem",
+                "title": "Ullamco laboris ladore pan",
+                "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+            },
+            {
+                "icon": "bi bi-inboxes",
+                "title": "Labore consequatur incidid dolore",
+                "text": "Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere"
+            }
+        ]
+    }
+}
