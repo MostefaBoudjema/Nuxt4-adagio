@@ -256,37 +256,7 @@
             "emailTitle": "Email Us",
             "emailText": "infoexample.com"
         },
-        "departments": {
-            "title": "Our Departments",
-            "subtitle": "Expert care in a variety of medical specialties",
-            "items": {
-                "cardiology": {
-                    "title": "Cardiology",
-                    "intro": "Specialized care for heart and blood vessel conditions.",
-                    "description": "Our cardiology team offers advanced diagnostics and treatment for heart disease, hypertension, and other cardiovascular issues. We use the latest technology to ensure accurate assessments and effective care."
-                },
-                "neurology": {
-                    "title": "Neurology",
-                    "intro": "Comprehensive care for brain and nervous system disorders.",
-                    "description": "From migraines to complex neurological diseases, our neurologists provide accurate diagnoses and treatment plans tailored to each patient's needs."
-                },
-                "hepatology": {
-                    "title": "Hepatology",
-                    "intro": "Focused on liver health and related conditions.",
-                    "description": "We provide advanced care for hepatitis, cirrhosis, fatty liver disease, and other liver disorders, supported by cutting-edge diagnostics."
-                },
-                "pediatrics": {
-                    "title": "Pediatrics",
-                    "intro": "Caring for your child’s health at every stage.",
-                    "description": "Our pediatric specialists offer compassionate medical care, from newborn checkups to adolescent health, ensuring your child’s well-being and development."
-                },
-                "eyeCare": {
-                    "title": "Eye Care",
-                    "intro": "Protecting and restoring your vision.",
-                    "description": "We offer routine eye exams, corrective procedures, and treatment for eye diseases, using the latest in ophthalmic technology."
-                }
-            }
-        },
+
         "form": {
             "name": "Your Name",
             "email": "Your Email",
@@ -294,28 +264,60 @@
             "message": "Your Message",
             "submit": "Send Message"
         },
-        "hero": {
-            "title": "WELCOME TO MEDILAB",
-            "subtitle": "We are a team of talented designers making websites with Bootstrap",
-            "whyTitle": "Why Choose Medilab?",
-            "whyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
-            "learnMore": "Learn More",
-            "box1": {
-                "title": "Corporis voluptates officia eiusmod",
-                "desc": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip"
-            },
-            "box2": {
-                "title": "Ullamco laboris ladore pan",
-                "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
-            },
-            "box3": {
-                "title": "Labore consequatur incidid dolore",
-                "desc": "Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere"
-            }
-        },
+
         "status": {
             "loading": "Loading...",
             "success": "Your message has been sent. Thank you!"
+        }
+    },
+    "hero": {
+        "title": "WELCOME TO MEDILAB",
+        "subtitle": "We are a team of talented designers making websites with Bootstrap",
+        "whyTitle": "Why Choose Medilab?",
+        "whyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "learnMore": "Learn More",
+        "box1": {
+            "title": "Corporis voluptates officia eiusmod",
+            "desc": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip"
+        },
+        "box2": {
+            "title": "Ullamco laboris ladore pan",
+            "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+        },
+        "box3": {
+            "title": "Labore consequatur incidid dolore",
+            "desc": "Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere"
+        }
+    },
+    "departments": {
+        "title": "Our Departments",
+        "subtitle": "Expert care in a variety of medical specialties",
+        "items": {
+            "cardiology": {
+                "title": "Cardiology",
+                "intro": "Specialized care for heart and blood vessel conditions.",
+                "description": "Our cardiology team offers advanced diagnostics and treatment for heart disease, hypertension, and other cardiovascular issues. We use the latest technology to ensure accurate assessments and effective care."
+            },
+            "neurology": {
+                "title": "Neurology",
+                "intro": "Comprehensive care for brain and nervous system disorders.",
+                "description": "From migraines to complex neurological diseases, our neurologists provide accurate diagnoses and treatment plans tailored to each patient's needs."
+            },
+            "hepatology": {
+                "title": "Hepatology",
+                "intro": "Focused on liver health and related conditions.",
+                "description": "We provide advanced care for hepatitis, cirrhosis, fatty liver disease, and other liver disorders, supported by cutting-edge diagnostics."
+            },
+            "pediatrics": {
+                "title": "Pediatrics",
+                "intro": "Caring for your child’s health at every stage.",
+                "description": "Our pediatric specialists offer compassionate medical care, from newborn checkups to adolescent health, ensuring your child’s well-being and development."
+            },
+            "eyeCare": {
+                "title": "Eye Care",
+                "intro": "Protecting and restoring your vision.",
+                "description": "We offer routine eye exams, corrective procedures, and treatment for eye diseases, using the latest in ophthalmic technology."
+            }
         }
     }
 }

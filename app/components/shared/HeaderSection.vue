@@ -23,7 +23,8 @@
     <!-- Branding + Nav -->
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <NuxtLink to="/" class="logo d-flex align-items-center me-auto">
+        <NuxtLink to="/" class="logo d-flex align-items-center"
+          :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
           <h1 class="sitename">{{ $t('header.sitename') }}</h1>
         </NuxtLink>
 
@@ -34,7 +35,7 @@
             <li><a href="#services">{{ $t('header.nav.services') }}</a></li>
             <li><a href="#departments">{{ $t('header.nav.departments') }}</a></li>
             <li><a href="#doctors">{{ $t('header.nav.doctors') }}</a></li>
-            <li class="dropdown">
+            <!-- <li class="dropdown">
               <a href="#"><span>{{ $t('header.nav.dropdown.main') }}</span> <i
                   class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
@@ -54,7 +55,7 @@
                 <li><a href="#">{{ $t('header.nav.dropdown.item3') }}</a></li>
                 <li><a href="#">{{ $t('header.nav.dropdown.item4') }}</a></li>
               </ul>
-            </li>
+            </li> -->
             <li><a href="#contact">{{ $t('header.nav.contact') }}</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -65,6 +66,10 @@
     </div>
   </header>
 </template>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { locale }=useI18n()
+</script>
 
 <style scoped>
 /*--------------------------------------------------------------

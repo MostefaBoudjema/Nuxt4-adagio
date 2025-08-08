@@ -5,7 +5,7 @@
       <slot />
     </main>
     <FooterSection />
-    
+
     <WhatsApp />
     <ScrollTop />
   </div>
@@ -40,7 +40,8 @@ useHead({
     { rel: 'stylesheet', href: '/assets/vendor/swiper/swiper-bundle.min.css' },
 
     // Main CSS
-    { rel: 'stylesheet', href: '/assets/css/main.css' }
+    // { rel: 'stylesheet', href: '/css/rtl.css' },
+    { rel: 'stylesheet', href: '/assets/css/main.css' },
   ],
   script: [
     { src: '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', body: true },

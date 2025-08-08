@@ -39,6 +39,12 @@ export default defineNuxtConfig({
                         file: 'ar.json',
                         name: 'Arabic',
                     },
+                    {
+                        code: 'en',
+                        iso: 'en-US',
+                        file: 'en.json',
+                        name: 'English',
+                    },
                 ],
                 defaultLocale: 'ar',
                 strategy: 'prefix_except_default',
