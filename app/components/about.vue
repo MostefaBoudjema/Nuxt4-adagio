@@ -16,27 +16,17 @@
                     <h3>{{ $t('about.title') }}</h3>
                     <p>{{ $t('about.description') }}</p>
                     <ul>
-                        <li>
-                            <i class="fa-solid fa-vial-circle-check"></i>
-                            <div>
-                                <h5>{{ $t('about.items[0].title') }}</h5>
-                                <p>{{ $t('about.items[0].text') }}</p>
+                        <li v-for="(item, index) in items" :key="index" class="row g-2 align-items-start mb-2">
+                            <div class="col">
+                                <i :class="item.icon"></i>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="mb-1">{{ item.title }}</h5>
+                                <p class="mb-0">{{ item.text }}</p>
                             </div>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-pump-medical"></i>
-                            <div>
-                                <h5>{{ $t('about.items[1].title') }}</h5>
-                                <p>{{ $t('about.items[1].text') }}</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-heart-circle-xmark"></i>
-                            <div>
-                                <h5>{{ $t('about.items[2].title') }}</h5>
-                                <p>{{ $t('about.items[2].text') }}</p>
-                            </div>
-                        </li>
+
+
                     </ul>
                 </div>
 
@@ -48,18 +38,28 @@
 
 </template>
 
-
 <script setup>
+import { useI18n } from 'vue-i18n'
 
-import { useI18n } from 'vue-i18n';
-// import { useLocalePath } from '#i18n';
+const { t }=useI18n()
 
-// const localePath = useLocalePath();
-
-const { t }=useI18n({
-    inheritLocale: true,
-    useScope: "global",
-});
+const items=[
+    {
+        icon: 'fa-solid fa-vial-circle-check',
+        title: t('about.items[0].title'),
+        text: t('about.items[0].text')
+    },
+    {
+        icon: 'fa-solid fa-pump-medical',
+        title: t('about.items[1].title'),
+        text: t('about.items[1].text')
+    },
+    {
+        icon: 'fa-solid fa-heart-circle-xmark',
+        title: t('about.items[2].title'),
+        text: t('about.items[2].text')
+    }
+]
 </script>
 
 <style scoped>

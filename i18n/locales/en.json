@@ -271,22 +271,22 @@
         }
     },
     "hero": {
-        "title": "WELCOME TO MEDILAB",
-        "subtitle": "We are a team of talented designers making websites with Bootstrap",
-        "whyTitle": "Why Choose Medilab?",
-        "whyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+        "title": "Welcome to MediLab",
+        "subtitle": "A fully integrated medical center offering top-quality healthcare services with the latest technology",
+        "whyTitle": "Why Choose MediLab?",
+        "whyDescription": "At MediLab, we put your health first by providing comprehensive medical services led by a team of specialized doctors, using the latest equipment to ensure the best results.",
         "learnMore": "Learn More",
         "box1": {
-            "title": "Corporis voluptates officia eiusmod",
-            "desc": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip"
+            "title": "Exceptional Medical Care",
+            "desc": "High-quality healthcare services tailored to your needs in a safe and comfortable environment"
         },
         "box2": {
-            "title": "Ullamco laboris ladore pan",
-            "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+            "title": "Modern Technology",
+            "desc": "Using the latest devices and diagnostics to ensure accurate results and treatments"
         },
         "box3": {
-            "title": "Labore consequatur incidid dolore",
-            "desc": "Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere"
+            "title": "Comprehensive Services",
+            "desc": "From consultations and diagnostics to treatment and continuous follow-up"
         }
     },
     "departments": {

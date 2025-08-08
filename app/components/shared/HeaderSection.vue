@@ -23,11 +23,13 @@
     <!-- Branding + Nav -->
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <NuxtLink to="/" class="logo d-flex align-items-center"
-          :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
+        <!-- <NuxtLink to="/" class="logo d-flex align-items-center" :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
           <h1 class="sitename">{{ $t('header.sitename') }}</h1>
+        </NuxtLink> -->
+        <NuxtLink to="/" class="logo d-flex align-items-center" :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
+          <img class="mx-2" :src="$i18n.locale === 'ar' ? '/assets/img/logo.svg' : '/assets/img/logo.svg'" alt="Logo">{{
+              $t('header.sitename') }}
         </NuxtLink>
-
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">{{ $t('header.nav.home') }}</a></li>
