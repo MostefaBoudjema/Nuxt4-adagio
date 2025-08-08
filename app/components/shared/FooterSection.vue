@@ -5,13 +5,13 @@
         <!-- About Section -->
         <div class="col-lg-4 col-md-6 footer-about">
           <NuxtLink to="/" class="logo d-flex align-items-center">
-            <span class="sitename">Medilab</span>
+            <span class="sitename">{{ $t('siteName') }}</span>
           </NuxtLink>
           <div class="footer-contact pt-3">
-            <p>123 Health Street</p>
-            <p>Annaba, Algeria 23000</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+213 770 123 456</span></p>
-            <p><strong>Email:</strong> <span>info@medilab.dz</span></p>
+            <p>{{ $t('address.line1') }}</p>
+            <p>{{ $t('address.line2') }}</p>
+            <p class="mt-3"><strong>{{ $t('phone') }}:</strong> <span>{{ $t('phoneNumber') }}</span></p>
+            <p><strong>{{ $t('email') }}:</strong> <span>{{ $t('emailAddress') }}</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -23,49 +23,49 @@
 
         <!-- Useful Links -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>{{ $t('usefulLinks.title') }}</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero">{{ $t('nav.home') }}</a></li>
+            <li><a href="#about">{{ $t('nav.about') }}</a></li>
+            <li><a href="#services">{{ $t('nav.services') }}</a></li>
+            <li><a href="#departments">{{ $t('nav.departments') }}</a></li>
+            <li><a href="#contact">{{ $t('nav.contact') }}</a></li>
           </ul>
         </div>
 
         <!-- Medical Services -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Medical Services</h4>
+          <h4>{{ $t('medicalServices.title') }}</h4>
           <ul>
-            <li><a href="#">General Consultation</a></li>
-            <li><a href="#">Cardiology</a></li>
-            <li><a href="#">Dental Care</a></li>
-            <li><a href="#">Pediatrics</a></li>
-            <li><a href="#">Radiology</a></li>
+            <li><a href="#">{{ $t('medicalServices.generalConsultation') }}</a></li>
+            <li><a href="#">{{ $t('medicalServices.cardiology') }}</a></li>
+            <li><a href="#">{{ $t('medicalServices.dentalCare') }}</a></li>
+            <li><a href="#">{{ $t('medicalServices.pediatrics') }}</a></li>
+            <li><a href="#">{{ $t('medicalServices.radiology') }}</a></li>
           </ul>
         </div>
 
         <!-- Patient Resources -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Patient Resources</h4>
+          <h4>{{ $t('patientResources.title') }}</h4>
           <ul>
-            <li><a href="#">Book Appointment</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Patient Portal</a></li>
-            <li><a href="#">Health Tips</a></li>
-            <li><a href="#">Insurance Info</a></li>
+            <li><a href="#">{{ $t('patientResources.bookAppointment') }}</a></li>
+            <li><a href="#">{{ $t('patientResources.faqs') }}</a></li>
+            <li><a href="#">{{ $t('patientResources.portal') }}</a></li>
+            <li><a href="#">{{ $t('patientResources.healthTips') }}</a></li>
+            <li><a href="#">{{ $t('patientResources.insurance') }}</a></li>
           </ul>
         </div>
 
         <!-- Legal & Support -->
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Legal & Support</h4>
+          <h4>{{ $t('legalSupport.title') }}</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="#">{{ $t('legalSupport.privacyPolicy') }}</a></li>
+            <li><a href="#">{{ $t('legalSupport.termsOfService') }}</a></li>
+            <li><a href="#">{{ $t('legalSupport.helpCenter') }}</a></li>
+            <li><a href="#">{{ $t('legalSupport.careers') }}</a></li>
+            <li><a href="#">{{ $t('legalSupport.feedback') }}</a></li>
           </ul>
         </div>
       </div>
@@ -75,18 +75,19 @@
     <div class="container copyright text-center mt-4">
       <p>
         © <span>{{ new Date().getFullYear() }}</span>
-        <strong class="px-1 sitename">Medilab</strong>
-        <span>All Rights Reserved</span>
+        <strong class="px-1 sitename">{{ $t('siteName') }}</strong>
+        <span>{{ $t('allRightsReserved') }}</span>
       </p>
       <div class="credits">
-        Designed by
+        {{ $t('designedBy') }}
         <a href="https://bootstrapmade.com/" target="_blank" rel="noopener">BootstrapMade</a>
-        — Customized by <a href="https://mostefa-boudjema.vercel.app" target="_blank" rel="noopener">Mostefa
-          Boudjema</a>
+        — {{ $t('customizedBy') }}
+        <a href="https://mostefa-boudjema.vercel.app" target="_blank" rel="noopener">Mostefa Boudjema</a>
       </div>
     </div>
   </footer>
 </template>
+
 <style scoped>
 /*--------------------------------------------------------------
 # Global Footer

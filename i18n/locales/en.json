@@ -1,0 +1,321 @@
+{
+    "about": {
+        "title": "About Us",
+        "description": "We are a dedicated team of developers and innovators committed to delivering high-quality digital solutions tailored to your business needs. Our mission is to turn your ideas into reality through technology, creativity, and precision.",
+        "items": [
+            {
+                "title": "Innovative and Reliable Solutions",
+                "text": "We combine creativity and technical expertise to build solutions that are efficient, secure, and scalable."
+            },
+            {
+                "title": "Expert Team with Proven Experience",
+                "text": "Our professionals bring years of experience in web and software development across multiple industries."
+            },
+            {
+                "title": "Customer-Centric Approach",
+                "text": "We work closely with our clients to ensure every project meets their goals and exceeds expectations."
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Answers to common questions about our clinic services and appointments.",
+        "q1": {
+            "question": "How can I book an appointment at the clinic?",
+            "answer": "You can book an appointment online through our website or by calling our reception desk during working hours."
+        },
+        "q2": {
+            "question": "Do you accept walk-in patients?",
+            "answer": "Yes, we accept walk-ins depending on doctor availability, but we recommend booking in advance to avoid waiting."
+        },
+        "q3": {
+            "question": "What payment methods are available?",
+            "answer": "We accept cash, credit/debit cards, and online payments. Insurance billing is also available for partnered providers."
+        },
+        "q4": {
+            "question": "Can I reschedule or cancel my appointment?",
+            "answer": "Yes, you can reschedule or cancel up to 24 hours before your appointment through your account or by contacting us."
+        },
+        "q5": {
+            "question": "Do you offer online consultations?",
+            "answer": "Yes, our doctors provide telemedicine consultations for certain conditions. You can book these through our website."
+        },
+        "q6": {
+            "question": "What should I bring for my first visit?",
+            "answer": "Please bring a valid ID, any previous medical records, and a list of medications you are currently taking."
+        }
+    },
+    "gallery": {
+        "title": "Gallery",
+        "subtitle": "Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer comprehensive healthcare services to meet your needs",
+        "items": {
+            "cardiology": {
+                "title": "Cardiology",
+                "description": "Advanced heart care services, from diagnosis to treatment and follow-up."
+            },
+            "pharmacy": {
+                "title": "Pharmacy",
+                "description": "A full-service pharmacy with prescription refills and medical supplies."
+            },
+            "patientCare": {
+                "title": "Patient Care",
+                "description": "Personalized patient support and guidance throughout your treatment journey."
+            },
+            "labTests": {
+                "title": "Laboratory Tests",
+                "description": "Accurate and fast diagnostic testing for a wide range of conditions."
+            },
+            "rehab": {
+                "title": "Rehabilitation",
+                "description": "Physical therapy and rehabilitation programs tailored to your needs."
+            },
+            "consultation": {
+                "title": "Medical Consultation",
+                "description": "Expert medical advice from experienced doctors across various specialties."
+            }
+        }
+    },
+    "stats": {
+        "doctors": "Doctors",
+        "departments": "Departments",
+        "researchLabs": "Research Labs",
+        "awards": "Awards"
+    },
+    "testimonials": {
+        "title": "Testimonials",
+        "subtitle": "Our patients' experiences reflect our dedication to quality healthcare.",
+        "items": {
+            "saul": {
+                "name": "Saul Goodman",
+                "title": "CEO & Founder",
+                "quote": "Thanks to the clinic’s cardiology team, I received life-saving treatment in a timely and professional manner."
+            },
+            "sara": {
+                "name": "Sara Wilsson",
+                "title": "Designer",
+                "quote": "From booking my appointment online to getting my lab results, everything was smooth and efficient."
+            },
+            "jena": {
+                "name": "Jena Karlis",
+                "title": "Store Owner",
+                "quote": "The doctors truly care about their patients and take time to explain every step of the treatment."
+            },
+            "matt": {
+                "name": "Matt Brandon",
+                "title": "Freelancer",
+                "quote": "I’ve never experienced such compassionate and personalized care before."
+            },
+            "john": {
+                "name": "John Larson",
+                "title": "Entrepreneur",
+                "quote": "Professional staff, modern facilities, and outstanding medical service."
+            }
+        }
+    },
+    "appointment": {
+        "title": "Book an Appointment",
+        "subtitle": "Schedule your visit with one of our specialists in just a few clicks.",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "phone": "Your Phone",
+            "date": "Preferred Appointment Date",
+            "department": "Select Department",
+            "doctor": "Select Doctor",
+            "message": "Additional Notes (Optional)",
+            "submit": "Make an Appointment"
+        },
+        "departments": {
+            "general": "General Medicine",
+            "pediatrics": "Pediatrics",
+            "cardiology": "Cardiology"
+        },
+        "doctors": {
+            "smith": "Dr. John Smith",
+            "ahmed": "Dr. Ahmed Bensaid",
+            "lee": "Dr. Emily Lee"
+        },
+        "status": {
+            "loading": "Loading...",
+            "success": "Your appointment request has been sent successfully. Thank you!"
+        }
+    },
+    "doctors": {
+        "title": "Our Doctors",
+        "subtitle": "Meet our team of highly qualified and experienced medical professionals",
+        "list": {
+            "walter": {
+                "name": "Walter White",
+                "role": "Chief Medical Officer",
+                "bio": "Over 20 years of experience in hospital leadership, specializing in improving patient care standards and medical safety."
+            },
+            "sarah": {
+                "name": "Sarah Johnson",
+                "role": "Anesthesiologist",
+                "bio": "Expert in anesthesia management and patient monitoring, ensuring comfort and safety during surgical procedures."
+            },
+            "william": {
+                "name": "William Anderson",
+                "role": "Cardiologist",
+                "bio": "Specialist in diagnosing and treating heart conditions, committed to preventive care and advanced cardiovascular treatments."
+            },
+            "amanda": {
+                "name": "Amanda Jepson",
+                "role": "Neurosurgeon",
+                "bio": "Renowned for precision in complex brain and spinal surgeries, dedicated to advancing neurological health."
+            }
+        }
+    },
+    "header": {
+        "contact_email": "contactexample.com",
+        "phone": "+1 5589 55488 55",
+        "sitename": "Medilab",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "departments": "Departments",
+            "doctors": "Doctors",
+            "dropdown": {
+                "main": "Dropdown",
+                "item1": "Dropdown 1",
+                "item2": "Dropdown 2",
+                "item3": "Dropdown 3",
+                "item4": "Dropdown 4",
+                "deep": {
+                    "main": "Deep Dropdown",
+                    "item1": "Deep Dropdown 1",
+                    "item2": "Deep Dropdown 2",
+                    "item3": "Deep Dropdown 3",
+                    "item4": "Deep Dropdown 4",
+                    "item5": "Deep Dropdown 5"
+                }
+            },
+            "contact": "Contact"
+        },
+        "cta": "Make an Appointment"
+    },
+    "siteName": "Medilab",
+    "address": {
+        "line1": "123 Health Street",
+        "line2": "Annaba, Algeria 23000"
+    },
+    "phone": "Phone",
+    "phoneNumber": "+213 770 123 456",
+    "email": "Email",
+    "emailAddress": "infomedilab.dz",
+    "usefulLinks": {
+        "title": "Useful Links"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Our Services",
+        "departments": "Departments",
+        "contact": "Contact"
+    },
+    "medicalServices": {
+        "title": "Medical Services",
+        "generalConsultation": "General Consultation",
+        "cardiology": "Cardiology",
+        "dentalCare": "Dental Care",
+        "pediatrics": "Pediatrics",
+        "radiology": "Radiology"
+    },
+    "patientResources": {
+        "title": "Patient Resources",
+        "bookAppointment": "Book Appointment",
+        "faqs": "FAQs",
+        "portal": "Patient Portal",
+        "healthTips": "Health Tips",
+        "insurance": "Insurance Info"
+    },
+    "legalSupport": {
+        "title": "Legal & Support",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "helpCenter": "Help Center",
+        "careers": "Careers",
+        "feedback": "Feedback"
+    },
+    "allRightsReserved": "All Rights Reserved",
+    "designedBy": "Designed by",
+    "customizedBy": "Customized by",
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with us for inquiries, feedback, or support.",
+        "info": {
+            "locationTitle": "Location",
+            "locationText": "A108 Adam Street, New York, NY 535022",
+            "callTitle": "Call Us",
+            "callText": "+1 5589 55488 55",
+            "emailTitle": "Email Us",
+            "emailText": "infoexample.com"
+        },
+        "departments": {
+            "title": "Our Departments",
+            "subtitle": "Expert care in a variety of medical specialties",
+            "items": {
+                "cardiology": {
+                    "title": "Cardiology",
+                    "intro": "Specialized care for heart and blood vessel conditions.",
+                    "description": "Our cardiology team offers advanced diagnostics and treatment for heart disease, hypertension, and other cardiovascular issues. We use the latest technology to ensure accurate assessments and effective care."
+                },
+                "neurology": {
+                    "title": "Neurology",
+                    "intro": "Comprehensive care for brain and nervous system disorders.",
+                    "description": "From migraines to complex neurological diseases, our neurologists provide accurate diagnoses and treatment plans tailored to each patient's needs."
+                },
+                "hepatology": {
+                    "title": "Hepatology",
+                    "intro": "Focused on liver health and related conditions.",
+                    "description": "We provide advanced care for hepatitis, cirrhosis, fatty liver disease, and other liver disorders, supported by cutting-edge diagnostics."
+                },
+                "pediatrics": {
+                    "title": "Pediatrics",
+                    "intro": "Caring for your child’s health at every stage.",
+                    "description": "Our pediatric specialists offer compassionate medical care, from newborn checkups to adolescent health, ensuring your child’s well-being and development."
+                },
+                "eyeCare": {
+                    "title": "Eye Care",
+                    "intro": "Protecting and restoring your vision.",
+                    "description": "We offer routine eye exams, corrective procedures, and treatment for eye diseases, using the latest in ophthalmic technology."
+                }
+            }
+        },
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Your Message",
+            "submit": "Send Message"
+        },
+        "hero": {
+            "title": "WELCOME TO MEDILAB",
+            "subtitle": "We are a team of talented designers making websites with Bootstrap",
+            "whyTitle": "Why Choose Medilab?",
+            "whyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+            "learnMore": "Learn More",
+            "box1": {
+                "title": "Corporis voluptates officia eiusmod",
+                "desc": "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip"
+            },
+            "box2": {
+                "title": "Ullamco laboris ladore pan",
+                "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt"
+            },
+            "box3": {
+                "title": "Labore consequatur incidid dolore",
+                "desc": "Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere"
+            }
+        },
+        "status": {
+            "loading": "Loading...",
+            "success": "Your message has been sent. Thank you!"
+        }
+    }
+}

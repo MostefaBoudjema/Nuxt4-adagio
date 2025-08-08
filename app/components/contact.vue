@@ -4,8 +4,8 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>{{ $t('contact.title') }}</h2>
+            <p>{{ $t('contact.subtitle') }}</p>
         </div><!-- End Section Title -->
 
         <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -22,27 +22,26 @@
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
-                            <h3>Location</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <h3>{{ $t('contact.info.locationTitle') }}</h3>
+                            <p>{{ $t('contact.info.locationText') }}</p>
                         </div>
-                    </div><!-- End Info Item -->
+                    </div>
 
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
+                            <h3>{{ $t('contact.info.callTitle') }}</h3>
+                            <p>{{ $t('contact.info.callText') }}</p>
                         </div>
-                    </div><!-- End Info Item -->
+                    </div>
 
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
-                            <h3>Email Us</h3>
-                            <p>info@example.com</p>
+                            <h3>{{ $t('contact.info.emailTitle') }}</h3>
+                            <p>{{ $t('contact.info.emailText') }}</p>
                         </div>
-                    </div><!-- End Info Item -->
-
+                    </div>
                 </div>
 
                 <div class="col-lg-8">
@@ -51,30 +50,31 @@
                         <div class="row gy-4">
 
                             <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                <input type="text" name="name" class="form-control"
+                                    :placeholder="$t('contact.form.name')" required>
                             </div>
 
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                    required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                    required="">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email"
+                                    :placeholder="$t('contact.form.email')" required>
                             </div>
 
                             <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                    required=""></textarea>
+                                <input type="text" class="form-control" name="subject"
+                                    :placeholder="$t('contact.form.subject')" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6"
+                                    :placeholder="$t('contact.form.message')" required></textarea>
                             </div>
 
                             <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
+                                <div class="loading">{{ $t('contact.status.loading') }}</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">{{ $t('contact.status.success') }}</div>
 
-                                <button type="submit">Send Message</button>
+                                <button type="submit">{{ $t('contact.form.submit') }}</button>
                             </div>
 
                         </div>
@@ -87,6 +87,7 @@
 
     </section><!-- /Contact Section -->
 </template>
+
 
 <style scoped>
 /*--------------------------------------------------------------

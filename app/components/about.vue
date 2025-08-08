@@ -13,34 +13,28 @@
                 </div>
 
                 <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                    <h3>About Us</h3>
-                    <p>
-                        Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti.
-                        Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius
-                        incidunt reiciendis veritatis asperiores placeat.
-                    </p>
+                    <h3>{{ $t('about.title') }}</h3>
+                    <p>{{ $t('about.description') }}</p>
                     <ul>
                         <li>
                             <i class="fa-solid fa-vial-circle-check"></i>
                             <div>
-                                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                                <h5>{{ $t('about.items[0].title') }}</h5>
+                                <p>{{ $t('about.items[0].text') }}</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-pump-medical"></i>
                             <div>
-                                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata
-                                    redi</p>
+                                <h5>{{ $t('about.items[1].title') }}</h5>
+                                <p>{{ $t('about.items[1].text') }}</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-heart-circle-xmark"></i>
                             <div>
-                                <h5>Voluptatem et qui exercitationem</h5>
-                                <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime
-                                    veniam</p>
+                                <h5>{{ $t('about.items[2].title') }}</h5>
+                                <p>{{ $t('about.items[2].text') }}</p>
                             </div>
                         </li>
                     </ul>
@@ -53,6 +47,7 @@
     </section><!-- /About Section -->
 
 </template>
+
 
 <script setup>
 
@@ -79,45 +74,45 @@ p {
 # About Section
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .about .content ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .about .content ul li {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
 }
 
 .about .content ul i {
-  flex-shrink: 0;
-  font-size: 48px;
-  color: var(--accent-color);
-  margin-right: 20px;
+    flex-shrink: 0;
+    font-size: 48px;
+    color: var(--accent-color);
+    margin-right: 20px;
 }
 
 .about .content ul h5 {
-  font-size: 18px;
-  font-weight: 700;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .about .content ul p {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .about .pulsating-play-btn {
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
 }
 
 @media (max-width: 768px) {

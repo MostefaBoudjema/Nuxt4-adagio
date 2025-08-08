@@ -1,94 +1,96 @@
 <template>
-    <!-- Doctors Section -->
-    <section id="doctors" class="doctors section">
+  <!-- Doctors Section -->
+  <section id="doctors" class="doctors section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>{{ t('doctors.title') }}</h2>
+      <p>{{ t('doctors.subtitle') }}</p>
+    </div>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Doctors</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Medical Officer</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Anesthesiologist</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>Cardiology</span>
-                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="team-member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Neurosurgeon</span>
-                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""> <i class="bi bi-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End Team Member -->
-
+    <div class="container">
+      <div class="row gy-4">
+        <div v-for="(doc, index) in doctors" :key="index" class="col-lg-6" :data-aos="'fade-up'"
+          :data-aos-delay="100 * (index + 1)">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img :src="doc.image" class="img-fluid" alt="" />
             </div>
-
+            <div class="member-info">
+              <h4>{{ t(doc.name) }}</h4>
+              <span>{{ t(doc.role) }}</span>
+              <p>{{ t(doc.bio) }}</p>
+              <div class="social">
+                <a v-for="(link, i) in doc.social" :key="i" :href="link.url" target="_blank">
+                  <i :class="link.icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </section><!-- /Doctors Section -->
+      </div>
+    </div>
+  </section>
 </template>
 
-<style scoped>
+<script setup>
+import { useI18n } from 'vue-i18n'
 
+const { t }=useI18n()
+
+const doctors=[
+  {
+    name: 'doctors.list.walter.name',
+    role: 'doctors.list.walter.role',
+    bio: 'doctors.list.walter.bio',
+    image: '/assets/img/doctors/doctors-1.jpg',
+    social: [
+      { icon: 'bi bi-twitter-x', url: '#' },
+      { icon: 'bi bi-facebook', url: '#' },
+      { icon: 'bi bi-instagram', url: '#' },
+      { icon: 'bi bi-linkedin', url: '#' }
+    ]
+  },
+  {
+    name: 'doctors.list.sarah.name',
+    role: 'doctors.list.sarah.role',
+    bio: 'doctors.list.sarah.bio',
+    image: '/assets/img/doctors/doctors-2.jpg',
+    social: [
+      { icon: 'bi bi-twitter-x', url: '#' },
+      { icon: 'bi bi-facebook', url: '#' },
+      { icon: 'bi bi-instagram', url: '#' },
+      { icon: 'bi bi-linkedin', url: '#' }
+    ]
+  },
+  {
+    name: 'doctors.list.william.name',
+    role: 'doctors.list.william.role',
+    bio: 'doctors.list.william.bio',
+    image: '/assets/img/doctors/doctors-3.jpg',
+    social: [
+      { icon: 'bi bi-twitter-x', url: '#' },
+      { icon: 'bi bi-facebook', url: '#' },
+      { icon: 'bi bi-instagram', url: '#' },
+      { icon: 'bi bi-linkedin', url: '#' }
+    ]
+  },
+  {
+    name: 'doctors.list.amanda.name',
+    role: 'doctors.list.amanda.role',
+    bio: 'doctors.list.amanda.bio',
+    image: '/assets/img/doctors/doctors-4.jpg',
+    social: [
+      { icon: 'bi bi-twitter-x', url: '#' },
+      { icon: 'bi bi-facebook', url: '#' },
+      { icon: 'bi bi-instagram', url: '#' },
+      { icon: 'bi bi-linkedin', url: '#' }
+    ]
+  }
+]
+</script>
+
+
+<style scoped>
 /*--------------------------------------------------------------
 # Doctors Section
 --------------------------------------------------------------*/
@@ -214,5 +216,4 @@
 .doctors .team-member .social a+a {
   margin-left: 8px;
 }
-
 </style>

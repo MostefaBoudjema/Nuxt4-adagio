@@ -1,104 +1,76 @@
 <template>
     <!-- Services Section -->
     <section id="services" class="services section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item  position-relative">
-                        <div class="icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Nesciunt Mete</h3>
-                        </a>
-                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
-                            perferendis tempore et consequatur.</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <i class="fas fa-pills"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Eosle Commodi</h3>
-                        </a>
-                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic
-                            non ut nesciunt dolorem.</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <i class="fas fa-hospital-user"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Ledo Markt</h3>
-                        </a>
-                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas
-                            adipisci eos earum corrupti.</p>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Asperiores Commodit</h3>
-                        </a>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit
-                            provident adipisci neque.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <i class="fas fa-wheelchair"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Velit Doloremque</h3>
-                        </a>
-                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi
-                            at autem alias eius labore.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div><!-- End Service Item -->
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-item position-relative">
-                        <div class="icon">
-                            <i class="fas fa-notes-medical"></i>
-                        </div>
-                        <a href="#" class="stretched-link">
-                            <h3>Dolori Architecto</h3>
-                        </a>
-                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
-                            Corrupti recusandae ducimus enim.</p>
-                        <a href="#" class="stretched-link"></a>
-                    </div>
-                </div><!-- End Service Item -->
-
-            </div>
-
+            <h2>{{ t('services.title') }}</h2>
+            <p>{{ t('services.subtitle') }}</p>
         </div>
 
-    </section><!-- /Services Section -->
+        <div class="container">
+            <div class="row gy-4">
+                <div v-for="(service, index) in services" :key="index" class="col-lg-4 col-md-6" data-aos="fade-up"
+                    :data-aos-delay="100 * (index + 1)">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i :class="service.icon"></i>
+                        </div>
+                        <a :href="service.link" class="stretched-link">
+                            <h3>{{ t(service.title) }}</h3>
+                        </a>
+                        <p>{{ t(service.description) }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t }=useI18n();
+
+const services=[
+    {
+        icon: 'fas fa-heartbeat',
+        title: 'services.items.cardiology.title',
+        description: 'services.items.cardiology.description',
+        link: '#',
+    },
+    {
+        icon: 'fas fa-pills',
+        title: 'services.items.pharmacy.title',
+        description: 'services.items.pharmacy.description',
+        link: '#',
+    },
+    {
+        icon: 'fas fa-hospital-user',
+        title: 'services.items.patientCare.title',
+        description: 'services.items.patientCare.description',
+        link: '#',
+    },
+    {
+        icon: 'fas fa-dna',
+        title: 'services.items.labTests.title',
+        description: 'services.items.labTests.description',
+        link: '#',
+    },
+    {
+        icon: 'fas fa-wheelchair',
+        title: 'services.items.rehab.title',
+        description: 'services.items.rehab.description',
+        link: '#',
+    },
+    {
+        icon: 'fas fa-notes-medical',
+        title: 'services.items.consultation.title',
+        description: 'services.items.consultation.description',
+        link: '#',
+    },
+];
+</script>
+
 
 <style scoped>
 /*--------------------------------------------------------------

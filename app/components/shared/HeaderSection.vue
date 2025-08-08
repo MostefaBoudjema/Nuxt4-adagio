@@ -5,10 +5,10 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center">
-            <a href="mailto:contact@example.com">contact@example.com</a>
+            <a href="mailto:contact@example.com">{{ $t('header.contact_email') }}</a>
           </i>
           <i class="bi bi-phone d-flex align-items-center ms-4">
-            <span>+1 5589 55488 55</span>
+            <span>{{ $t('header.phone') }}</span>
           </i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -24,49 +24,49 @@
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <NuxtLink to="/" class="logo d-flex align-items-center me-auto">
-          <!-- Optional Image Logo -->
-          <!-- <img src="/assets/img/logo.png" alt="Logo" /> -->
-          <h1 class="sitename">Medilab</h1>
+          <h1 class="sitename">{{ $t('header.sitename') }}</h1>
         </NuxtLink>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#hero" class="active">{{ $t('header.nav.home') }}</a></li>
+            <li><a href="#about">{{ $t('header.nav.about') }}</a></li>
+            <li><a href="#services">{{ $t('header.nav.services') }}</a></li>
+            <li><a href="#departments">{{ $t('header.nav.departments') }}</a></li>
+            <li><a href="#doctors">{{ $t('header.nav.doctors') }}</a></li>
             <li class="dropdown">
-              <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <a href="#"><span>{{ $t('header.nav.dropdown.main') }}</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Dropdown 1</a></li>
+                <li><a href="#">{{ $t('header.nav.dropdown.item1') }}</a></li>
                 <li class="dropdown">
-                  <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <a href="#"><span>{{ $t('header.nav.dropdown.deep.main') }}</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
+                    <li><a href="#">{{ $t('header.nav.dropdown.deep.item1') }}</a></li>
+                    <li><a href="#">{{ $t('header.nav.dropdown.deep.item2') }}</a></li>
+                    <li><a href="#">{{ $t('header.nav.dropdown.deep.item3') }}</a></li>
+                    <li><a href="#">{{ $t('header.nav.dropdown.deep.item4') }}</a></li>
+                    <li><a href="#">{{ $t('header.nav.dropdown.deep.item5') }}</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
+                <li><a href="#">{{ $t('header.nav.dropdown.item2') }}</a></li>
+                <li><a href="#">{{ $t('header.nav.dropdown.item3') }}</a></li>
+                <li><a href="#">{{ $t('header.nav.dropdown.item4') }}</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">{{ $t('header.nav.contact') }}</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+        <a class="cta-btn d-none d-sm-block" href="#appointment">{{ $t('header.cta') }}</a>
       </div>
     </div>
   </header>
 </template>
-<style scoped>
 
+<style scoped>
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -450,5 +450,4 @@
     display: block;
   }
 }
-
 </style>

@@ -1,53 +1,42 @@
 <template>
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <i class="fa-solid fa-user-doctor"></i>
-                    <div class="stats-item">
-                        <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Doctors</p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <i class="fa-regular fa-hospital"></i>
-                    <div class="stats-item">
-                        <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Departments</p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <i class="fas fa-flask"></i>
-                    <div class="stats-item">
-                        <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Research Labs</p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                    <i class="fas fa-award"></i>
-                    <div class="stats-item">
-                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                            class="purecounter"></span>
-                        <p>Awards</p>
-                    </div>
-                </div><!-- End Stats Item -->
-
-            </div>
-
+  <!-- Stats Section -->
+  <section id="stats" class="stats section light-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div
+          v-for="(stat, index) in stats"
+          :key="index"
+          class="col-lg-3 col-md-6 d-flex flex-column align-items-center"
+        >
+          <i :class="stat.icon"></i>
+          <div class="stats-item">
+            <span
+              data-purecounter-start="0"
+              :data-purecounter-end="stat.value"
+              data-purecounter-duration="1"
+              class="purecounter"
+            ></span>
+            <p>{{ t(stat.label) }}</p>
+          </div>
         </div>
-
-    </section><!-- /Stats Section -->
+      </div>
+    </div>
+  </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const stats = [
+  { icon: 'fa-solid fa-user-doctor', value: 85, label: 'stats.doctors' },
+  { icon: 'fa-regular fa-hospital', value: 18, label: 'stats.departments' },
+  { icon: 'fas fa-flask', value: 12, label: 'stats.researchLabs' },
+  { icon: 'fas fa-award', value: 150, label: 'stats.awards' },
+];
+</script>
+
 
 <style scoped>
 

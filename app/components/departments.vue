@@ -1,126 +1,103 @@
 <template>
-    <!-- Departments Section -->
-    <section id="departments" class="departments section">
+  <!-- Departments Section -->
+  <section id="departments" class="departments section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>{{ t('departments.title') }}</h2>
+      <p>{{ t('departments.subtitle') }}</p>
+    </div>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Departments</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row">
-                <div class="col-lg-3">
-                    <ul class="nav nav-tabs flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab"
-                                href="#departments-tab-1">Cardiology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Neurology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Hepatology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Pediatrics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Eye Care</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-9 mt-4 mt-lg-0">
-                    <div class="tab-content">
-                        <div class="tab-pane active show" id="departments-tab-1">
-                            <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Cardiology</h3>
-                                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila
-                                        parde sonata raqer a videna mareta paulona marka</p>
-                                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum
-                                        eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
-                                        minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui
-                                        similique accusamus nostrum rem vero</p>
-                                </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                    <img src="/assets/img/departments-1.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="departments-tab-2">
-                            <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila
-                                        parde sonata raqer a videna mareta paulona marka</p>
-                                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
-                                        reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit
-                                        ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
-                                        desera vafle de nideran pal</p>
-                                </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                    <img src="/assets/img/departments-2.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="departments-tab-3">
-                            <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim
-                                        fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis
-                                        aut</p>
-                                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
-                                        quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae
-                                        sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et
-                                        harum voluptatem optio quae</p>
-                                </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                    <img src="/assets/img/departments-3.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="departments-tab-4">
-                            <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas
-                                        iure porro quis delectus</p>
-                                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                                        necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
-                                        consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a
-                                        laborum inventore</p>
-                                </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                    <img src="/assets/img/departments-4.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="departments-tab-5">
-                            <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.
-                                    </p>
-                                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae
-                                        ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet.
-                                        Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                                </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
-                                    <img src="/assets/img/departments-5.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <!-- Tabs -->
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li
+              v-for="(dept, index) in departments"
+              :key="index"
+              class="nav-item"
+            >
+              <a
+                class="nav-link"
+                :class="{ active: activeTab === index }"
+                data-bs-toggle="tab"
+                :href="'#departments-tab-' + index"
+                @click="activeTab = index"
+              >
+                {{ t(dept.title) }}
+              </a>
+            </li>
+          </ul>
         </div>
 
-    </section><!-- /Departments Section -->
+        <!-- Tab Content -->
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div
+              v-for="(dept, index) in departments"
+              :key="index"
+              class="tab-pane"
+              :class="{ 'active show': activeTab === index }"
+              :id="'departments-tab-' + index"
+            >
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>{{ t(dept.title) }}</h3>
+                  <p class="fst-italic">{{ t(dept.intro) }}</p>
+                  <p>{{ t(dept.description) }}</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img :src="dept.image" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+const activeTab = ref(0)
+
+const departments = [
+  {
+    title: 'departments.items.cardiology.title',
+    intro: 'departments.items.cardiology.intro',
+    description: 'departments.items.cardiology.description',
+    image: '/assets/img/departments-1.jpg'
+  },
+  {
+    title: 'departments.items.neurology.title',
+    intro: 'departments.items.neurology.intro',
+    description: 'departments.items.neurology.description',
+    image: '/assets/img/departments-2.jpg'
+  },
+  {
+    title: 'departments.items.hepatology.title',
+    intro: 'departments.items.hepatology.intro',
+    description: 'departments.items.hepatology.description',
+    image: '/assets/img/departments-3.jpg'
+  },
+  {
+    title: 'departments.items.pediatrics.title',
+    intro: 'departments.items.pediatrics.intro',
+    description: 'departments.items.pediatrics.description',
+    image: '/assets/img/departments-4.jpg'
+  },
+  {
+    title: 'departments.items.eyeCare.title',
+    intro: 'departments.items.eyeCare.intro',
+    description: 'departments.items.eyeCare.description',
+    image: '/assets/img/departments-5.jpg'
+  }
+]
+</script>
 
 <style scoped>
 /*--------------------------------------------------------------
