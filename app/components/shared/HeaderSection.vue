@@ -8,7 +8,7 @@
             <a href="mailto:contact@example.com">{{ $t('header.contact_email') }}</a>
           </i>
           <i class="bi bi-phone d-flex align-items-center ms-4">
-            <span>{{ $t('header.phone') }}</span>
+            <span dir="ltr">{{ $t('header.phone') }}</span>
           </i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -23,12 +23,9 @@
     <!-- Branding + Nav -->
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <!-- <NuxtLink to="/" class="logo d-flex align-items-center" :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
-          <h1 class="sitename">{{ $t('header.sitename') }}</h1>
-        </NuxtLink> -->
-        <NuxtLink to="/" class="logo d-flex align-items-center" :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
-          <img class="mx-2" :src="$i18n.locale === 'ar' ? '/assets/img/logo.svg' : '/assets/img/logo.svg'" alt="Logo">{{
-              $t('header.sitename') }}
+        <NuxtLink :to="localePath('/')"
+          class="logo d-flex align-items-center" :class="locale === 'ar' ? 'ms-auto' : 'me-auto'">
+          <img class="mx-2" :src="$i18n.locale === 'ar' ? '/assets/img/logo.svg' : '/assets/img/logo.svg'" alt="Logo">{{ $t('header.sitename') }}
         </NuxtLink>
         <nav id="navmenu" class="navmenu">
           <ul>
@@ -71,6 +68,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 const { locale }=useI18n()
+import { useLocalePath } from '#i18n';
+const localePath=useLocalePath();
 </script>
 
 <style scoped>
