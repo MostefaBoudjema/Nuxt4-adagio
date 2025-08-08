@@ -2,7 +2,7 @@
   <!-- Hero Section -->
   <section id="hero" class="hero section light-background">
 
-    <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+    <img :src="locale === 'ar' ? '/assets/img/hero-bg-ar.jpg' : '/assets/img/hero-bg.jpg'" alt="" data-aos="fade-in">
 
     <div class="container position-relative">
 
@@ -66,15 +66,14 @@
 
 <script setup>
 
-import { useI18n } from 'vue-i18n';
-// import { useLocalePath } from '#i18n';
-
-// const localePath = useLocalePath();
-
-const { t }=useI18n({
+import { useI18n } from 'vue-i18n'
+const { locale, t }=useI18n({
   inheritLocale: true,
   useScope: "global",
-});
+})
+import { useLocalePath } from '#i18n';
+const localePath=useLocalePath();
+
 
 
 </script>
