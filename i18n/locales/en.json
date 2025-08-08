@@ -172,7 +172,7 @@
     },
     "header": {
         "contact_email": "contactexample.com",
-        "phone": "+1 5589 55488 55",
+        "phone": "+213 73 123 456",
         "sitename": "Medilab",
         "nav": {
             "home": "Home",
@@ -245,6 +245,7 @@
     "allRightsReserved": "All Rights Reserved",
     "designedBy": "Designed by",
     "customizedBy": "Customized by",
+    "developedBy": "Developed by",
     "contact": {
         "title": "Contact Us",
         "subtitle": "Get in touch with us for inquiries, feedback, or support.",
@@ -252,7 +253,7 @@
             "locationTitle": "Location",
             "locationText": "A108 Adam Street, New York, NY 535022",
             "callTitle": "Call Us",
-            "callText": "+1 5589 55488 55",
+            "callText": "+213 73 123 456",
             "emailTitle": "Email Us",
             "emailText": "infoexample.com"
         },

@@ -216,9 +216,10 @@
     "allRightsReserved": "جميع الحقوق محفوظة",
     "designedBy": "تصميم بواسطة",
     "customizedBy": "تخصيص بواسطة",
+    "developedBy": "تطوير بواسطة",
     "header": {
         "contact_email": "contactexample.com",
-        "phone": "+1 5589 55488 55",
+        "phone": "+213 73 123 456",
         "sitename": "ميدي لاب",
         "nav": {
             "home": "الرئيسية",
@@ -252,7 +253,7 @@
             "locationTitle": "العنوان",
             "locationText": "A108 شارع آدم، نيويورك، NY 535022",
             "callTitle": "اتصل بنا",
-            "callText": "+1 5589 55488 55",
+            "callText": "+213 73 123 456",
             "emailTitle": "راسلنا",
             "emailText": "infoexample.com"
         },

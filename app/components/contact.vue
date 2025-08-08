@@ -31,7 +31,7 @@
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
                             <h3>{{ $t('contact.info.callTitle') }}</h3>
-                            <p>{{ $t('contact.info.callText') }}</p>
+                            <p dir="ltr">{{ $t('contact.info.callText') }}</p>
                         </div>
                     </div>
 

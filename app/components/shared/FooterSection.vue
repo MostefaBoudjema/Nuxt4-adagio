@@ -3,14 +3,14 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <!-- About Section -->
-        <div class="col-lg-4 col-md-6 footer-about">
+        <div class="col-lg-4 col-md-6 footer-about text-center text-md-end d-flex flex-column align-items-center align-items-md-start">
           <NuxtLink to="/" class="logo d-flex align-items-center">
             <span class="sitename">{{ $t('siteName') }}</span>
           </NuxtLink>
           <div class="footer-contact pt-3">
             <p>{{ $t('address.line1') }}</p>
             <p>{{ $t('address.line2') }}</p>
-            <p class="mt-3"><strong>{{ $t('phone') }}:</strong> <span>{{ $t('phoneNumber') }}</span></p>
+            <p class="mt-3" ><strong >{{ $t('phone') }}:</strong> <span dir="ltr">{{ $t('phoneNumber') }}</span></p>
             <p><strong>{{ $t('email') }}:</strong> <span>{{ $t('emailAddress') }}</span></p>
           </div>
           <div class="social-links d-flex mt-4">
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Useful Links -->
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links text-center text-md-end d-flex flex-column align-items-center align-items-md-start">
           <h4>{{ $t('usefulLinks.title') }}</h4>
           <ul>
             <li><a href="#hero">{{ $t('nav.home') }}</a></li>
@@ -34,7 +34,7 @@
         </div>
 
         <!-- Medical Services -->
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links text-center text-md-end d-flex flex-column align-items-center align-items-md-start">
           <h4>{{ $t('medicalServices.title') }}</h4>
           <ul>
             <li><a href="#">{{ $t('medicalServices.generalConsultation') }}</a></li>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Patient Resources -->
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links text-center text-md-end d-flex flex-column align-items-center align-items-md-start">
           <h4>{{ $t('patientResources.title') }}</h4>
           <ul>
             <li><a href="#">{{ $t('patientResources.bookAppointment') }}</a></li>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- Legal & Support -->
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links text-center text-md-end d-flex flex-column align-items-center align-items-md-start">
           <h4>{{ $t('legalSupport.title') }}</h4>
           <ul>
             <li><a href="#">{{ $t('legalSupport.privacyPolicy') }}</a></li>
@@ -79,9 +79,7 @@
         <span>{{ $t('allRightsReserved') }}</span>
       </p>
       <div class="credits">
-        {{ $t('designedBy') }}
-        <a href="https://bootstrapmade.com/" target="_blank" rel="noopener">BootstrapMade</a>
-        — {{ $t('customizedBy') }}
+        {{ $t('developedBy') }}
         <a href="https://mostefa-boudjema.vercel.app" target="_blank" rel="noopener">Mostefa Boudjema</a>
       </div>
     </div>
